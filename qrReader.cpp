@@ -1,5 +1,6 @@
 #include "qrReader.h"
-
+#include <cmath>
+using std::isnan;
 qrReader::qrReader() {
     // Constructor
     this->possibleCenters = std::vector<FinderPattern*>();
