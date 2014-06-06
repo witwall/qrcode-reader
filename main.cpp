@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char **argv) {
     //cv::VideoCapture capture = cv::VideoCapture(1);
     qrReader qr = qrReader();
 
@@ -16,7 +16,7 @@ int main() {
     //    return 1;
     //}
 
-    cv::Mat image = cv::imread("./sample02.jpg");
+    cv::Mat image = cv::imread(argv[1]);
     cv::Mat imgBW = cv::Mat(image.rows, image.cols, CV_8UC1);
     //while(true) {
     //    capture >> image;
